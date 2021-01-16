@@ -1,24 +1,61 @@
-import logo from './logo.svg';
+import React from 'react'
 import './App.css';
+import { Form } from 'react-bootstrap'
+
+
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <div className={"contactBox"}>
+        <div className={"leftBox"}>
+          <div className={"bgGreen"} />
+          <div className={"imageContact"} />
+          <div className={"imageText bold style1 "}>Welcome</div>
+          <div className={"imageText style2 "}>Let's Talk</div>
+        </div>
+        <div className={"rightBox"}>
+          <div className={"box"}>
+            <div className={"titleContact"}>Contact Us</div>
+            <div className={"inputSbox"}>
+
+              <Form>
+                <Form.Group controlId="formBasicName">
+                  <Form.Label>Name</Form.Label>
+                  <Form.Control type="email" placeholder="Enter name" />
+
+                </Form.Group>
+
+
+
+                <Form.Group controlId="formBasicEmail">
+                  <Form.Label>Email address</Form.Label>
+                  <Form.Control type="email" placeholder="Enter email" />
+
+                </Form.Group>
+
+                <Form.Group controlId="contactForm.ControlTextarea1">
+                  <Form.Label>Message</Form.Label>
+                  <Form.Control as="textarea" rows={3} placeholder="Message..." />
+                </Form.Group>
+
+
+                <div className={'btnContact'}>Submit</div>
+                {/* <Button  className={'btnContact'} type="submit">
+                  Submit
+  </Button> */}
+              </Form>
+
+             
+            </div>
+           
+
+          </div>
+        </div>
+      </div>
     </div>
+
+    // </div>
   );
 }
 

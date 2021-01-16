@@ -1,38 +1,118 @@
-.App {
-  text-align: center;
+.contactBox{
+  width: 700px;
+  overflow: hidden;
+  margin: 80px auto 30px;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.leftBox{
+  width: 300px;
+  height: 480px;
+  float:left;
+  position: relative;
+  display: block;
+}
+.bgGreen{
+  width: 100%;
+  height: 100%;
+  background-color: rgb(19, 170, 82);
+  border-top-left-radius: 90px;
+
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+.imageContact{
+  background-image: url("C:\Users\Biguele\Desktop\React\CheckPoint Contact With React\contact-form-checkpoint\src\images\contactus.jpg");
+  width: 100%;
+  height: 100%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 90px;
+  opacity: 0.5;
+  position: absolute;
+  top: 0;
+  left: 0;
+
+}
+
+.imageText{
+  font-size: 28px;
+  position: absolute;
+  color: #ffffff;
+}
+
+.imageText.bold{
+  font-weight: bold;
+}
+
+
+.imageText.style1{
+  top: 200px;
+  left: 20px;
+}
+
+.imageText.style2{
+  top: 250px;
+  left: 20px;
+}
+
+
+
+ .rightBox{
+  width: 400px;
+  height: 480px;
+  float:right;
+  border: 1px solid #59c385
+ }
+
+ .box{
+   width: 310px;
+   height: 415px;
+   margin: 32px auto;
+ }
+
+ .titleContact{
+   font-size: 22px;
+   text-align: center;
+   font-weight: bold;
+   margin-bottom: 30px;
+   color: #116149;
+
+ }
+
+ .inputSbox{
+   width: 300px;
+   height: 42px;
+   border-bottom: 2px solid #d8d8d8;
+   margin-bottom: 10px;
+ }
+
+
+
+ .btnContact{
+   width: 300px;
+   height: 47px;
+   color: #ffffff;
+   background-color: rgb(18,161, 78) !important;
+   text-align: center;
+   line-height: 47px;
+   border-radius: 4px;
+   cursor: pointer;
+ }
+
+ /*  */
+
+@media screen and (max-width: 768px)
+{
+  .contactBox{
+    width: 100%;
   }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
-
-.App-link {
-  color: #61dafb;
-}
-
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+  .leftBox{
+    display: none;
   }
-  to {
-    transform: rotate(360deg);
+  .rightBox{
+    width: 100%;
+    height: 478px;
+    float: right;
+    border: 1px solid #59c385;
   }
 }
